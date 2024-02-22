@@ -1,9 +1,9 @@
 function fizzBuzz(n){
-    const Buzz = 5;
+
     if(n % 3 === 0){
         return "Fizz";
     }
-    if(Buzz === 5){
+    if(n % 5 === 0){
         return "Buzz";
     }
     
