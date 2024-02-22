@@ -1,8 +1,10 @@
 import fizzBuzz  from "./fizzBuzz";
 
 describe("FizzBuzz", () => {
-  it("deberia retornar el numero si no es divisible por 3 ni por 5", () => {
+  it("return the number if isn´t divisible by 3 or 5", () => {
     expect(fizzBuzz(7)).toEqual("7");
   });
-  
+  it("return Fizz if the number is divisible by 3", () => {
+    expect(fizzBuzz(3)).toEqual("Fizz");
+  });
 });
