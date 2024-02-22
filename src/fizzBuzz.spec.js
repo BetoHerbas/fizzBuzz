@@ -11,5 +11,8 @@ describe("FizzBuzz", () => {
     it("return Fizz if the number is divisible by 3 like 9"), () => {
         expect(fizzBuzz(9)).toEqual("Fizz");
     }
+    it("return Buzz if the number is divisible by 5 like 5"), () => {
+        expect(fizzBuzz(5)).toEqual("Buzz");
+    }
 
 });
