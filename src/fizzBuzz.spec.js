@@ -1,4 +1,5 @@
 import fizzBuzz from "./fizzBuzz";
+import generateFizzBuzz from "./generateFizzBuzz";
 
 describe("FizzBuzz", () => {
 
@@ -20,5 +21,7 @@ describe("FizzBuzz", () => {
     it("return Fizz Buzz if the number is divisible by 3 and 5 like 15", () => {
         expect(fizzBuzz(15)).toEqual("Fizz Buzz");
     });
-    
+    it("return the full fizz buzz sequence", () => {
+        expect(generateFizzBuzz(15)).toEqual("1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 Fizz Buzz ");
+    });
 });
