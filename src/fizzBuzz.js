@@ -1,15 +1,19 @@
 function fizzBuzz(n){
 
+    let result = "";
     if(n % 3 === 0 && n % 5 === 0){
-        return "Fizz Buzz";
+        result = "Fizz Buzz";
     }
     else if(n % 3 === 0){
-        return "Fizz";
+        result = "Fizz";
     }
     else if(n % 5 === 0){
-        return "Buzz";
+        result = "Buzz";
+    }
+    else{
+        result = n + "";
     }
 
-    return n;
+    return result;
 }
 export default fizzBuzz;
